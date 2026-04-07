@@ -128,3 +128,14 @@ C:\Users\Rakshitha\OneDrive\Desktop\FULL STACK PROJECTS\The Bug Management Dashb
 C:\Users\Rakshitha\OneDrive\Desktop\FULL STACK PROJECTS\The Bug Management Dashboard\backend\obj\Release\net10.0\BugManagementAPI.pdb
 C:\Users\Rakshitha\OneDrive\Desktop\FULL STACK PROJECTS\The Bug Management Dashboard\backend\obj\Release\net10.0\BugManagementAPI.genruntimeconfig.cache
 C:\Users\Rakshitha\OneDrive\Desktop\FULL STACK PROJECTS\The Bug Management Dashboard\backend\obj\Release\net10.0\ref\BugManagementAPI.dll
+C:\Users\Rakshitha\OneDrive\Desktop\FULL STACK PROJECTS\The Bug Management Dashboard\backend\bin\Release\net10.0\publish\web.config
+C:\Users\Rakshitha\OneDrive\Desktop\FULL STACK PROJECTS\The Bug Management Dashboard\backend\bin\Release\net10.0\publish\appsettings.json
+C:\Users\Rakshitha\OneDrive\Desktop\FULL STACK PROJECTS\The Bug Management Dashboard\backend\bin\Release\net10.0\publish\BugManagementAPI.deps.json
+C:\Users\Rakshitha\OneDrive\Desktop\FULL STACK PROJECTS\The Bug Management Dashboard\backend\bin\Release\net10.0\publish\BugManagementAPI.runtimeconfig.json
+C:\Users\Rakshitha\OneDrive\Desktop\FULL STACK PROJECTS\The Bug Management Dashboard\backend\bin\Release\net10.0\publish\BugManagementAPI.staticwebassets.endpoints.json
+C:\Users\Rakshitha\OneDrive\Desktop\FULL STACK PROJECTS\The Bug Management Dashboard\backend\bin\Release\net10.0\BugManagementAPI.staticwebassets.runtime.json
+C:\Users\Rakshitha\OneDrive\Desktop\FULL STACK PROJECTS\The Bug Management Dashboard\backend\obj\Release\net10.0\BugManagementAPI.sourcelink.json
+C:\Users\Rakshitha\OneDrive\Desktop\FULL STACK PROJECTS\The Bug Management Dashboard\backend\obj\Release\net10.0\compressed\y8mrqva7ru-{0}-vagikyz9qx-vagikyz9qx.gz
+C:\Users\Rakshitha\OneDrive\Desktop\FULL STACK PROJECTS\The Bug Management Dashboard\backend\obj\Release\net10.0\compressed\62ghu4jg9i-{0}-3pdy87xde6-3pdy87xde6.gz
+C:\Users\Rakshitha\OneDrive\Desktop\FULL STACK PROJECTS\The Bug Management Dashboard\backend\obj\Release\net10.0\compressed\3ris98u2xb-{0}-f7k1s8rky1-f7k1s8rky1.gz
+C:\Users\Rakshitha\OneDrive\Desktop\FULL STACK PROJECTS\The Bug Management Dashboard\backend\obj\Release\net10.0\compressed\xkmzmtwn6p-{0}-endbmdwoe8-endbmdwoe8.gz
