@@ -1,10 +1,25 @@
+# .NET build folders
 bin/
 obj/
+
+# Node / frontend
 node_modules/
-dist/
-.git/
-.gitignore
-Dockerfile
-*.md
 frontend/
 frontend-app/
+
+# Angular build
+dist/
+
+# Git
+.git
+.gitignore
+
+# Docs
+*.md
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
