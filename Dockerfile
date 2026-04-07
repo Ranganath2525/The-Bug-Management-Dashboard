@@ -2,8 +2,12 @@
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /app
 
-COPY . ./
+# Copy csproj first (important for restore)
+COPY *.csproj ./
 RUN dotnet restore
+
+# Copy everything else
+COPY . ./
 RUN dotnet publish -c Release -o out
 
 # Runtime stage
@@ -12,9 +16,7 @@ WORKDIR /app
 
 COPY --from=build /app/out .
 
-# Render uses PORT env
 ENV ASPNETCORE_URLS=http://+:8080
-
 EXPOSE 8080
 
 ENTRYPOINT ["dotnet", "BugManagementAPI.dll"]
