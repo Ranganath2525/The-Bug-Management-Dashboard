@@ -1,0 +1,32 @@
+<div class="modal-overlay">
+  <div class="modal-card glass">
+    <h2>{{ bug.id ? 'Edit Bug Report' : 'New Bug Report' }}</h2>
+    <hr>
+    
+    <div class="form-group">
+      <label>Title</label>
+      <input type="text" [(ngModel)]="bug.title" placeholder="Short description of the bug" class="input-glass">
+    </div>
+
+    <div class="form-group">
+      <label>Description</label>
+      <textarea [(ngModel)]="bug.description" placeholder="Provide detailed steps to reproduce..." class="input-glass" rows="4"></textarea>
+    </div>
+
+    <div class="form-group">
+      <label>Status</label>
+      <select [(ngModel)]="bug.status" class="input-glass">
+        <option [value]="0">Open</option>
+        <option [value]="1">Closed</option>
+        <option [value]="2">Work In Progress</option>
+        <option [value]="3">Hold</option>
+        <option [value]="4">Rejected</option>
+      </select>
+    </div>
+
+    <div class="modal-actions">
+      <button class="btn btn-secondary" (click)="close()">Cancel</button>
+      <button class="btn btn-primary" (click)="saveBug()">{{ bug.id ? 'Save Changes' : 'Create Bug' }}</button>
+    </div>
+  </div>
+</div>

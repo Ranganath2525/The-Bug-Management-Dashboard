@@ -1,0 +1,54 @@
+<div class="container dashboard-card">
+  <div class="header">
+    <h1>Bug Management Dashboard</h1>
+    <button class="btn btn-primary" (click)="openAddModal()">+ New Bug</button>
+  </div>
+
+  <div class="filters">
+    <input type="text" placeholder="Search by title or description..." [(ngModel)]="searchTerm" (input)="applyFilters()"
+      class="input-glass">
+    <select [(ngModel)]="statusFilter" (change)="applyFilters()" class="input-glass">
+      <option value="">All Statuses</option>
+      <option value="0">Open</option>
+      <option value="2">Work In Progress</option>
+      <option value="3">Hold</option>
+      <option value="1">Closed</option>
+      <option value="4">Rejected</option>
+    </select>
+  </div>
+
+  <div class="table-container">
+    <table class="glass-table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Title</th>
+          <th>Description</th>
+          <th>Status</th>
+          <th>Created At</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let bug of filteredBugs">
+          <td>{{ bug.id }}</td>
+          <td>{{ bug.title }}</td>
+          <td>{{ bug.description }}</td>
+          <td>
+            <span [class]="'badge ' + getStatusClass(bug.status)">{{ getStatusLabel(bug.status) }}</span>
+          </td>
+          <td>{{ bug.createdAt | date:'short' }}</td>
+          <td class="action-buttons">
+            <button class="btn btn-icon" (click)="openEditModal(bug)" title="Edit">✏️</button>
+            <button class="btn btn-icon btn-danger" (click)="deleteBug(bug.id!)" title="Delete">🗑️</button>
+          </td>
+        </tr>
+        <tr *ngIf="filteredBugs.length === 0">
+          <td colspan="6" class="no-data">No bugs found.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<app-bug-modal *ngIf="showModal" [bug]="selectedBug!" (onClose)="handleModalClose($event)"></app-bug-modal>
